@@ -16,11 +16,7 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/cart" element={<Cart />} />
       </Routes>
-      <SuprSendInbox
-        workspaceKey={process.env.REACT_APP_SUPRSEND_WORKSPACE_KEY}
-        subscriberId={process.env.REACT_APP_SUPRSEND_SUBSCRIBER_ID}
-        distinctId={process.env.REACT_APP_SUPRSEND_DISTINCT_ID}
-      />
+      
     </div>
   );
 };
